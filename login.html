@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/59847bd5e5.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body class="sang">
+    <div class="bt-main">
+      <button class="bt-sang" onclick="toi()">
+        Sáng <i class="fa-regular fa-sun"></i>
+      </button>
+      <button class="bt-toi" onclick="sang()">
+        Tối <i class="fa-solid fa-sun"></i>
+      </button>
+    </div>
+    <div class="container">
+      <div class="form">
+        <div class="title">
+          <h2>ACCOUNT LOGIN<p class="saiup"></p> </h2>
+        </div>
+        <div class="form-input">
+         <form> <label
+            ><p>USERNAME</p>
+            <input  type="text" id="userinput"
+          /></label>
+          <br />
+          <label
+            ><p>PASSWORD</p>
+            <input  type="password" class="lay" id="passinput"
+          /></label>
+        </form>
+        </div>
+        <div class="form-show">
+          <label
+            ><input type="checkbox" onclick="showpass()" /><span>
+              ShowPassword</span
+            ></label
+          >
+        </div>
+        <div class="form-bt">
+          <center>
+            <input type="button"  onclick="kiemTraValue()" value="LOGIN" />
+          </center>
+        </div>
+      </div>
+      <div class="blue">
+        <div class="icon">
+          <i class="fa-solid fa-plus check" onclick="hiensign()"></i>
+        </div>
+      </div>
+       <div class="form-signin">
+        <div class="container-form-signin">
+            <div class="title-signin"><h2>REGISTER ACCOUNT<p class="khacmk"></p></h2> </div>
+            <div class="input-sign">
+                <form>
+               <label> <p>USERNAME</p><input type="text" class="usersign" id="userdangky">
+            </label>
+               <label> <p>PASSWORD</p><input type="password"  id="passdangky" ></label>
+               <label> <p>CONFIRM PASSWORD</p><input type="password"  id="passdangky1"></label>
+               <label> <p>EMAIL ADDRESS</p><input type="email"></label>
+               <div class="bt-signin">
+                 <input type="submit" onclick="dangky()" value="REGISTER">
+               </div>
+               </form>
+            </div>
+        </div>
+      </div>
+      </div>
+     
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
